@@ -1,0 +1,365 @@
+/* style.css - Network Administrator Portfolio for Queena Paramitha Supriyadi */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #eef2f6;
+    color: #1a2c3e;
+    line-height: 1.5;
+    scroll-behavior: smooth;
+    padding: 2rem 1.5rem;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 32px;
+    box-shadow: 0 25px 45px -12px rgba(0, 0, 0, 0.18);
+    overflow: hidden;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #0a2f3a 0%, #104f5e 100%);
+    padding: 2.5rem 3rem;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.hero-left h1 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    letter-spacing: -0.3px;
+    margin-bottom: 0.5rem;
+}
+
+.title-badge {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(4px);
+    border-radius: 40px;
+    padding: 0.3rem 1rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin: 0.75rem 0 1rem 0;
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 0.9rem;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 0.4rem 1rem;
+    border-radius: 40px;
+    transition: 0.2s;
+}
+
+.contact-item i {
+    font-size: 1rem;
+    width: 20px;
+}
+
+.hero-right {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 28px;
+    padding: 1rem 1.8rem;
+    text-align: center;
+    backdrop-filter: blur(4px);
+}
+
+.availability {
+    font-size: 0.8rem;
+    letter-spacing: 0.5px;
+}
+
+.exp-badge {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-top: 0.25rem;
+}
+
+/* Section styling */
+.section {
+    padding: 2rem 3rem;
+    border-bottom: 1px solid #e9edf2;
+}
+
+.section:last-child {
+    border-bottom: none;
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #0f4c5c;
+    margin-bottom: 1.8rem;
+    border-left: 5px solid #0f4c5c;
+    padding-left: 1rem;
+}
+
+.section-title i {
+    color: #2c7a7b;
+    font-size: 1.5rem;
+}
+
+.summary-text {
+    font-size: 1rem;
+    margin-bottom: 1.2rem;
+    color: #2c3e44;
+}
+
+/* Highlight boxes */
+.highlight {
+    background: #eef6f9;
+    border-left: 4px solid #2c7a7b;
+    padding: 0.9rem 1.4rem;
+    border-radius: 18px;
+    margin: 1rem 0 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* Skills grid */
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-bottom: 0.8rem;
+}
+
+.skill-tag {
+    background: #eef2f5;
+    padding: 0.45rem 1.2rem;
+    border-radius: 40px;
+    font-weight: 500;
+    font-size: 0.85rem;
+    color: #1c4e5c;
+    transition: 0.2s;
+    border: 1px solid #dce5ea;
+}
+
+.skill-tag i {
+    margin-right: 6px;
+    font-size: 0.8rem;
+    color: #2b6e7c;
+}
+
+.skill-tag:hover {
+    background: #e2eef3;
+    transform: translateY(-1px);
+}
+
+/* Two columns layout */
+.two-columns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.col {
+    flex: 1;
+    min-width: 240px;
+}
+
+.col h4 {
+    font-weight: 700;
+    color: #145c6b;
+    margin-bottom: 1rem;
+    font-size: 1.05rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Certification badges */
+.certs-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.cert-item {
+    background: linear-gradient(135deg, #f8fbfd 0%, #f0f5f8 100%);
+    border: 1px solid #cde0e8;
+    border-radius: 48px;
+    padding: 0.5rem 1.2rem;
+    font-weight: 600;
+    font-size: 0.85rem;
+    color: #155f6b;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.cert-item i {
+    font-size: 1rem;
+    color: #1f7f8f;
+}
+
+/* Experience cards */
+.exp-card {
+    background: #fafdff;
+    border-radius: 24px;
+    padding: 1.3rem 1.6rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #e2edf2;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+    transition: all 0.2s;
+}
+
+.exp-card:hover {
+    border-color: #c0d6e0;
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.05);
+}
+
+.exp-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.5rem;
+}
+
+.exp-title {
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: #1e4e5f;
+}
+
+.exp-company {
+    font-weight: 600;
+    color: #2c7a7b;
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+}
+
+.exp-date {
+    color: #5f7f8c;
+    font-size: 0.75rem;
+    background: #eef3f6;
+    padding: 0.2rem 0.8rem;
+    border-radius: 30px;
+    font-weight: 500;
+}
+
+.exp-desc {
+    margin-top: 0.8rem;
+    padding-left: 0;
+    list-style: none;
+}
+
+.exp-desc li {
+    font-size: 0.9rem;
+    color: #2c3e44;
+    margin-bottom: 0.55rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.65rem;
+}
+
+.exp-desc li i {
+    color: #2c7a7b;
+    font-size: 0.8rem;
+    margin-top: 0.2rem;
+    min-width: 18px;
+}
+
+/* Extra cards for qualifications */
+.extra-card {
+    background: #ffffff;
+    border: 1px solid #dee9ef;
+    border-radius: 20px;
+    padding: 1.2rem 1.2rem;
+    margin-bottom: 1rem;
+    transition: all 0.2s;
+    height: 100%;
+}
+
+.extra-card i {
+    font-size: 1.6rem;
+    color: #1f7f8f;
+    margin-bottom: 0.6rem;
+    display: inline-block;
+}
+
+.extra-card h4 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #145c6b;
+    margin-bottom: 0.5rem;
+}
+
+.extra-card p {
+    font-size: 0.85rem;
+    color: #3a5e6b;
+    line-height: 1.4;
+}
+
+.full-width {
+    width: 100%;
+}
+
+/* Footer */
+footer {
+    background: #f0f4f8;
+    text-align: center;
+    padding: 1.6rem;
+    font-size: 0.8rem;
+    color: #3b6c7a;
+    border-top: 1px solid #dce7ed;
+}
+
+footer p i {
+    margin-right: 5px;
+}
+
+/* Responsive */
+@media (max-width: 780px) {
+    body {
+        padding: 1rem;
+    }
+    .hero {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1.8rem;
+    }
+    .section {
+        padding: 1.5rem;
+    }
+    .hero-left h1 {
+        font-size: 1.7rem;
+    }
+    .exp-header {
+        flex-direction: column;
+        gap: 8px;
+    }
+    .certs-wrapper {
+        gap: 0.7rem;
+    }
+    .two-columns {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
